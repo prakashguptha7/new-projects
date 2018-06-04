@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>calculator</title>
+    <style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+    <link rel="stylesheet" href="calsy.css">
+
+
+
+</head>
+<body>
+<form name="calculator">
+    <table class="box">
+        <tr>
+            <th> sample Calculator</th>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="text" name="display" id="display" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" name="one" value="  1  "   onclick="calculator.display.value += '1'">
+            <input type="button" name="two" value="  2  "   onclick="calculator.display.value += '2'">
+            <input type="button" name="three" value="  3  "   onclick="calculator.display.value +='3'">
+                <input type="button" class="operator" name="plus" value="  +  "   onclick="calculator.display.value += '+'">
+                <input type="button" class="operator" name="division" value="  /  "   onclick="calculator.display.value += '/'">
+
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <input type="button" name="four" value="  4  "   onclick="calculator.display.value += '4'">
+            <input type="button" name="five" value="  5  "   onclick="calculator.display.value += '5'">
+             <input type="button" name="six" value="  6  "   onclick="calculator.display.value +='6'">
+                <input type="button" class="operator" name="minus" value="  -  "   onclick="calculator.display.value += '-'">
+
+                <input type="reset" value="  C  ">
+
+            </td>
+         </tr>
+        <tr>
+            <td><input type="button" name="seven" value="  7  "   onclick="calculator.display.value += '7'">
+            <input type="button" name="eight" value="  8  "   onclick="calculator.display.value += '8'">
+            <input type="button" name="nine" value="  9  "   onclick="calculator.display.value +='9'">
+                <input type="button" class="operator" name="multiple" value="  *  "   onclick="calculator.display.value += '*'">
+
+            <input type="button" name="doit" value="  =  "   onclick="calculator.display.value = eval(calculator.display.value)">
+            </td>
+        </tr>
+
+
+
+    </table>
+</form>
+</body>
+</html>
